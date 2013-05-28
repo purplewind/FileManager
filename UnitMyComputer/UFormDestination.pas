@@ -65,7 +65,6 @@ type
       Node: PVirtualNode; Column: TColumnIndex);
     procedure vstHistoryFocusChanged(Sender: TBaseVirtualTree;
       Node: PVirtualNode; Column: TColumnIndex);
-    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   public
     PlLeftWidth : Integer;
     procedure SaveIni;
@@ -252,12 +251,7 @@ procedure TfrmDestination.btnOKClick(Sender: TObject);
 begin
   Close;
   ModalResult := mrOk;
-end;
-
-procedure TfrmDestination.FormClose(Sender: TObject; var Action: TCloseAction);
-begin
-  if btnOK.Enabled then
-    PlLeftWidth := plLeft.Width;
+  PlLeftWidth := plLeft.Width;
 end;
 
 procedure TfrmDestination.FormCreate(Sender: TObject);

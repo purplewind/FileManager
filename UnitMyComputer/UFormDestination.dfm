@@ -59,7 +59,6 @@ object frmDestination: TfrmDestination
   KeyPreview = True
   OldCreateOrder = False
   Position = poMainFormCenter
-  OnClose = FormClose
   OnCreate = FormCreate
   OnDestroy = FormDestroy
   OnKeyDown = FormKeyDown
@@ -150,7 +149,6 @@ object frmDestination: TfrmDestination
         OnGetText = vstDriverGetText
         OnGetImageIndex = vstDriverGetImageIndex
         OnInitChildren = vstDriverInitChildren
-        ExplicitHeight = 227
         Columns = <
           item
             Position = 0
@@ -167,8 +165,6 @@ object frmDestination: TfrmDestination
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitLeft = 238
-      ExplicitWidth = 427
       object Panel2: TPanel
         Left = 0
         Top = 0
@@ -180,7 +176,6 @@ object frmDestination: TfrmDestination
         Padding.Right = 2
         Padding.Bottom = 1
         TabOrder = 0
-        ExplicitWidth = 427
         object edtPath: TButtonedEdit
           Left = 0
           Top = 1
@@ -194,7 +189,6 @@ object frmDestination: TfrmDestination
           LeftButton.Visible = True
           ReadOnly = True
           TabOrder = 0
-          ExplicitWidth = 425
         end
       end
       object vstFileList: TVirtualStringTree
@@ -222,8 +216,6 @@ object frmDestination: TfrmDestination
         OnPaintText = vstFileListPaintText
         OnGetImageIndex = vstFileListGetImageIndex
         OnMouseDown = vstFileListMouseDown
-        ExplicitLeft = 3
-        ExplicitTop = 26
         Columns = <
           item
             Position = 0
@@ -288,7 +280,7 @@ object frmDestination: TfrmDestination
     Left = 104
     Top = 240
     Bitmap = {
-      494C010101000800400010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010101000800440010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000001000000001002000000000000010
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000

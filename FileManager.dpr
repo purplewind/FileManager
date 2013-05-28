@@ -1,7 +1,6 @@
 program FileManager;
 
 uses
-  ExceptionLog,
   Vcl.Forms,
   Windows,
   Messages,

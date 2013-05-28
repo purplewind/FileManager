@@ -764,8 +764,6 @@ begin
   Http := TIdHTTP.Create( nil );
   Http.ConnectTimeout := 60000;
   Http.ReadTimeout := 60000;
-  ssl := TIdSSLIOHandlerSocketOpenSSL.Create(nil);
-  Http.IOHandler := ssl;
   try
     fs := TFileStream.Create( FilePath, fmCreate );
     try
@@ -776,7 +774,6 @@ begin
     fs.Free;
   except
   end;
-  ssl.Free;
   Http.Free;
 end;
 

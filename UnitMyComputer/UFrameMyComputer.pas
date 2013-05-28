@@ -1122,7 +1122,7 @@ begin
   NewPage.Parent := PcMain;
   NewPage.PageControl := PcMain;
   NewPage.ImageIndex := 0;
-  NewPage.Padding.Top := 3;
+  NewPage.Padding.Top := 5;
   NewPage.ShowHint := False;
 
     // 创建 目录页面的 Frame
